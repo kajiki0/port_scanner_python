@@ -9,12 +9,10 @@ close socket
 
 '''
 
-
-
 import pyfiglet #ASCII art
 import socket #connections
 import sys #interpreter parameters
-from datetime import datetime #handling date... and time!(to know how long the scanning will last )
+from datetime import datetime #how long the scanning will last
 
 ascii_banner = pyfiglet.figlet_format("PORT SCANNER")
 print(ascii_banner)
@@ -33,9 +31,8 @@ print(f"Scanning started at: {datetime.now()}")
 print("-" * 50)
 
 #TCP/UDP port numbers range(0-65535) are divided into three categories(well-know,registerd and dynamic/private ports) by IANA(Internet Assigned Numbers Authority)
-# i will focus on the well-know ports(0-1023) because are the most common ports for system services,web,etc
+# focusing on the well-know ports(0-1023)
 
-#TCP connect is a priority, but for sure i will use UDP
 try:
     #scan ports between 1 to 1023
     for port in range(1,1023):
