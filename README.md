@@ -1,6 +1,5 @@
 Python Port Scanner project 
 
-(*for cybersecurity purposes*)
 
 sources: 
 
