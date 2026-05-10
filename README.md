@@ -1,7 +1,10 @@
 Python Port Scanner project 
 
+install pyfiglet with pip:
 
-use:
+`pip install pyfiglet`
+
+how to use:
 
 `python ./port_scanner.py [target]`
 
