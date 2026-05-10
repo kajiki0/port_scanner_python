@@ -9,6 +9,7 @@ close socket
 
 '''
 
+
 import pyfiglet #ASCII art
 import socket #connections
 import sys #interpreter parameters
@@ -109,6 +110,11 @@ def main():
     port_scanner(target)
     
     
-
+# url for scan testing: http://scanme.nmap.org
 if __name__ == "__main__":
     main()
+
+#TODO for a better approach:
+#1. after scanning all ports, open ports should be put on a open.txt file and closed ones should be put on a closed.txt file
+#1.2. other alternative: only show open ports at the end
+#2. show the services of each open port
